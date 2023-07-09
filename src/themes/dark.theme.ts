@@ -6,15 +6,15 @@ export const darkTheme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: pink['A200'],
+      main: '#556cd6',
     },
     secondary: {
-      main: cyan['A400'],
+      main: '#19857b',
     },
-    background: {
-      default: blueGrey['800'],
-      paper: blueGrey['700'],
-    },
+    // background: {
+    //   default: blueGrey['800'],
+    //   paper: blueGrey['700'],
+    // },
   },
   typography: {
     fontFamily: roboto.style.fontFamily,
