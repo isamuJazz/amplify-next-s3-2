@@ -18,10 +18,11 @@ export interface MyAppProps extends AppProps {
 export default function MyApp(props: MyAppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
-  const theme = React.useMemo(
-    () => (prefersDarkMode ? themes.dark : themes.light),
-    [prefersDarkMode]
-  )
+  const theme = themes.light
+  // React.useMemo(
+  //   () => (prefersDarkMode ? themes.dark : themes.light),
+  //   [prefersDarkMode]
+  // )
   return (
     <CacheProvider value={emotionCache}>
       <Head>
