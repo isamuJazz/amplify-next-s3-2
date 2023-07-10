@@ -5,6 +5,7 @@ frontend:
       commands:
         - npm ci
         - node test.js
+        - echo $secrets
     build:
       commands:
         - npm run build
